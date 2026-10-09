@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOTERO — Anticloud Installer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #0D0D0C 0%, #1a1a2e 50%, #0D0D0C 100%);
+            color: #F0EDE4;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; width: 100%; }
+        .header { text-align: center; margin-bottom: 40px; }
+        .logo {
+            width: 80px; height: 80px;
+            background: linear-gradient(135deg, #C83218, #ff6b4a);
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2em; font-weight: bold; color: #F0EDE4;
+            box-shadow: 0 10px 40px rgba(200, 50, 24, 0.3);
+        }
+        h1 { color: #F0EDE4; font-size: 2.5em; font-weight: 700; margin-bottom: 10px; letter-spacing: -0.5px; }
+        .subtitle { color: #888; font-size: 1.1em; }
+        .card {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: border-color 0.3s;
+        }
+        .card:hover { border-color: rgba(200, 50, 24, 0.3); }
+        .card h2 {
+            color: #C83218; margin-bottom: 16px; font-size: 1.2em; font-weight: 600;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .card h2::before {
+            content: ''; width: 4px; height: 20px;
+            background: #C83218; border-radius: 2px;
+        }
+        .card-content {
+            max-height: 250px; overflow-y: auto; padding-right: 12px;
+            line-height: 1.7; font-size: 0.9em; color: #ccc;
+        }
+        .card-content::-webkit-scrollbar { width: 6px; }
+        .card-content::-webkit-scrollbar-track { background: transparent; }
+        .card-content::-webkit-scrollbar-thumb { background: #C83218; border-radius: 3px; }
+        .form-group { margin-bottom: 16px; }
+        .form-group label {
+            display: block; margin-bottom: 6px; color: #888;
+            font-size: 0.85em; font-weight: 500;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%; padding: 12px 16px;
+            background: rgba(13, 13, 12, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px; color: #F0EDE4; font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus, .form-group select:focus {
+            outline: none; border-color: #C83218;
+        }
+        .form-group input::placeholder { color: #555; }
+        .checkbox-group {
+            display: flex; align-items: flex-start; gap: 12px;
+            margin-bottom: 24px; padding: 16px;
+            background: rgba(200, 50, 24, 0.05);
+            border: 1px solid rgba(200, 50, 24, 0.2);
+            border-radius: 12px;
+        }
+        .checkbox-group input {
+            width: 20px; height: 20px; margin-top: 2px;
+            accent-color: #C83218;
+        }
+        .checkbox-group label { color: #ccc; font-size: 0.9em; line-height: 1.5; }
+        .btn {
+            background: linear-gradient(135deg, #C83218, #a02815);
+            color: #F0EDE4; border: none;
+            padding: 16px 32px; font-size: 1.1em; font-weight: 600;
+            border-radius: 12px; cursor: pointer; width: 100%;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(200, 50, 24, 0.3);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(200, 50, 24, 0.4);
+        }
+        .btn:disabled {
+            background: #333; cursor: not-allowed;
+            transform: none; box-shadow: none;
+        }
+        .progress { display: none; margin-top: 24px; text-align: center; }
+        .progress.active { display: block; }
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-top: 3px solid #C83218;
+            border-radius: 50%; width: 50px; height: 50px;
+            animation: spin 1s linear infinite; margin: 0 auto 16px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .success {
+            display: none;
+            background: rgba(26, 42, 26, 0.8);
+            border: 1px solid rgba(42, 74, 42, 0.5);
+            border-radius: 16px; padding: 32px;
+            margin-top: 24px; text-align: center;
+        }
+        .success.active { display: block; }
+        .success h3 { color: #4a4; margin-bottom: 12px; font-size: 1.3em; }
+        .success p { color: #888; margin-bottom: 8px; }
+        .chain-hash {
+            font-family: 'Cascadia Code', 'Fira Code', monospace;
+            font-size: 0.75em; color: #555; margin-top: 16px;
+            padding: 12px; background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px; word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">A</div>
+            <h1>ZOTERO</h1>
+            <p class="subtitle">ACADEMIA_RD — Sovereign AI Infrastructure</p>
+        </div>
+
+        <div class="card">
+            <h2>Anticommons License</h2>
+            <div class="card-content" id="license-content">Loading license...</div>
+        </div>
+
+        <div class="card">
+            <h2>Letter of Intent (LOI)</h2>
+            <div class="card-content" id="loi-content">Loading LOI...</div>
+        </div>
+
+        <div class="card">
+            <h2>Registration (Optional)</h2>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label for="org">Organization</label>
+                <input type="text" id="org" placeholder="Your organization">
+            </div>
+            <div class="form-group">
+                <label for="usecase">Use Case</label>
+                <select id="usecase">
+                    <option value="personal">Personal Development</option>
+                    <option value="academic">Academic Research</option>
+                    <option value="education">Education</option>
+                    <option value="archive">Archival</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="agree">
+            <label for="agree">I have read and agree to the Anticommons License and Letter of Intent</label>
+        </div>
+
+        <button class="btn" id="install-btn" onclick="startInstallation()">Install ZOTERO</button>
+
+        <div class="progress" id="progress">
+            <div class="spinner"></div>
+            <p>Installing...</p>
+        </div>
+
+        <div class="success" id="success">
+            <h3>Installation Complete</h3>
+            <p>ZOTERO has been installed successfully.</p>
+            <div class="chain-hash" id="chain-hash"></div>
+        </div>
+    </div>
+
+    <script>
+        async function loadContent() {
+            try {
+                const licenseResp = await fetch('license.md');
+                const licenseText = await licenseResp.text();
+                document.getElementById('license-content').textContent = licenseText;
+            } catch (e) {
+                document.getElementById('license-content').textContent = 'License file not found.';
+            }
+
+            try {
+                const loiResp = await fetch('loi.md');
+                const loiText = await loiResp.text();
+                document.getElementById('loi-content').textContent = loiText;
+            } catch (e) {
+                document.getElementById('loi-content').textContent = 'LOI file not found.';
+            }
+        }
+
+        function generateHash(data) {
+            let hash = 0;
+            for (let i = 0; i < data.length; i++) {
+                const char = data.charCodeAt(i);
+                hash = ((hash << 5) - hash) + char;
+                hash = hash & hash;
+            }
+            return Math.abs(hash).toString(16).padStart(64, '0');
+        }
+
+        async function startInstallation() {
+            const agree = document.getElementById('agree').checked;
+            if (!agree) {
+                alert('Please agree to the License and LOI first.');
+                return;
+            }
+
+            const btn = document.getElementById('install-btn');
+            const progress = document.getElementById('progress');
+            const success = document.getElementById('success');
+
+            btn.disabled = true;
+            progress.classList.add('active');
+
+            const name = document.getElementById('name').value;
+            const org = document.getElementById('org').value;
+            const usecase = document.getElementById('usecase').value;
+
+            const timestamp = new Date().toISOString();
+            const data = JSON.stringify({ name, org, usecase, timestamp });
+            const hash = generateHash(data);
+
+            await new Promise(r => setTimeout(r, 1000));
+
+            document.getElementById('chain-hash').textContent = `AIOSS Hash: ${hash}`;
+            progress.classList.remove('active');
+            success.classList.add('active');
+
+            const acceptance = {
+                name: name || 'anonymous',
+                org: org || 'anonymous',
+                usecase: usecase,
+                timestamp: timestamp,
+                hash: hash
+            };
+
+            console.log('Acceptance data:', acceptance);
+        }
+
+        loadContent();
+    </script>
+</body>
+</html>

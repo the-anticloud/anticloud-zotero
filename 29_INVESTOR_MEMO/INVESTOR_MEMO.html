@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Investor Memo</title>
+<style>body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;}
+h1{color:#1a1a2e;}h2{color:#16213e;border-bottom:1px solid #ccc;padding-bottom:4px;}
+.hdr{background:#1a1a2e;color:#fff;padding:20px;border-radius:8px;margin-bottom:24px;}
+table{border-collapse:collapse;width:100%;}td,th{border:1px solid #ddd;padding:8px;}
+th{background:#1a1a2e;color:#fff;}</style></head><body>
+<div class="hdr"><h1>Investor Memo</h1>
+<p>ZOTERO | Anticloud FZ LLE | PAX L5 Narrow L2 General 27B</p></div>
+<pre style="white-space:pre-wrap;font-family:inherit"># Investor Memo - ZOTERO
+
+**Company:** Anticloud FZ LLE
+**Model:** PAX L5 Narrow L2 General 27B
+**Project:** ZOTERO | Category: ACADEMIA_RD
+**Upstream:** see project repository (MIT/Apache-2.0)
+
+## 1. Opportunity
+
+Regulated operators need Upstream open-source component (ZOTERO) repackaged for offline Anticloud deployment. without data egress. Cloud-hosted alternatives leak data by architecture; Anticloud FZ LLE delivers ZOTERO as an offline-first package with PAX L5 Narrow L2 General 27B inference on-device.
+
+## 2. Product
+
+ZOTERO (see project repository, MIT/Apache-2.0) integrated with: local PAX L5 Narrow L2 General 27B inference (4-bit, single T4, offline), AIOSS ledger on every mutation (SHA3-256, device-local Ed25519 keys), AES-256-GCM at rest, single-binary installer. See 10_TECHNICAL_HANDOFF and 28_TECHNICAL_WHITEPAPER for architecture.
+
+## 3. Market &amp; Go-To-Market
+
+Category ACADEMIA_RD; regulated verticals first (healthcare, defense, finance, government). Direct pilots + white-label partners. Pricing: per-project enterprise license (see 07_ENTERPRISE_LICENSE_AND_PRICING).
+
+## 4. Benchmarks &amp; Verification
+
+Kaggle v52: 4.1-4.2 tok/s single T4, 20/20 coherent, chain head 2828cffabd1d063a. Suite: MITRE ATT&amp;CK 100/100, NIST AI RMF 88%, TRL 7/9, ISO 27001 83%, EU AI Act 77.4%. Evidence in OFFICIAL_BENCHMARKS with AIOSS chain continuity. Lab results in ISOLATED_LAB_RESULTS where applicable.
+
+## 5. Team
+
+Lois-Kleinner Alpasan (Founder, CEO &amp; CTO) — sole builder of the 862-project corpus, PAX pipeline, AIOSS ledger, and KANTOR K5 hash. Hiring plan in INVESTOR_PACKAGE.
+
+## 6. Risks &amp; Mitigations
+
+- Upstream drift: mitigated by vendored offline mirror + SHA3-256 pinning (27_DEPENDENCIES).
+- Single-founder execution: mitigated by deterministic harness (every deliverable regenerable from scripts).
+- Regulatory change: compliance mappings versioned per release.
+
+## 7. Terms
+
+Non-dilutive preferred, initialization round. Private enquiries only, accredited/institutional.
+
+## Contact
+
+Lois-Kleinner Alpasan - CEO &amp; CTO, Anticloud FZ LLE
+lois@0-1.gg | 0-1.gg
+</pre></body></html>

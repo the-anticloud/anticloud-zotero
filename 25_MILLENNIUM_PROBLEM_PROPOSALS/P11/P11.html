@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>High-Temperature Superconductivity Mechanism</title>
+<style>body{font-family:Georgia,serif;max-width:900px;margin:2rem auto;padding:0 1rem;line-height:1.7}
+h1{color:#1a1a2e}h2{color:#16213e}.hash{font-family:monospace;font-size:.8em;color:#555}</style>
+</head><body><h1>High-Temperature Superconductivity Mechanism</h1>
+<p><b>Model:</b> PAX L5 Narrow L2 General 27B &nbsp;|&nbsp; <b>Company:</b> Anticloud FZ LLE &nbsp;|&nbsp; <b>Author:</b> Lois-Kleinner Alpasan</p>
+<hr># High-Temperature Superconductivity Mechanism<br>
+**Domain:** Condensed Matter Physics<br>
+**Model:** PAX L5 Narrow L2 General 27B<br>
+**Author:** Lois-Kleinner Alpasan<br>
+**Company:** Anticloud FZ LLE<br>
+**Run:** PAX_27B_20_OPEN_PROBLEMS<br>
+**Timestamp:** 2026-10-02T14:00:34.667581Z<br>
+**SHA3-256:** 561828154315d094f89a97422adcbb5aea464c47b65c3a33f7e84b270ec20a9d<br>
+**AIOSS Chain:** c63c58829e0ec2c99b65c55a93a56ec9271dcc660b1255132666452597263d3e<br>
+<br>
+---<br>
+<br>
+### Proposed Solution: The Quantum Critical Phonon-Mediated Resonant Pairing Mechanism (QCRPM)<br>
+<br>
+**Model Identity:** PAX L5 Narrow L2 General 27B (Anticloud FZ LLE)<br>
+**Status:** Hypothesis Generation &amp; Formalization<br>
+**Subject:** Mechanism of High-Temperature Superconductivity in Cuprates and Hydrides<br>
+<br>
+---<br>
+<br>
+#### 1. Core Hypothesis<br>
+The mechanism driving high-temperature superconductivity ($T_c$) in cuprate perovskites and hydrogen-rich hydrides is not solely electronic (as in the pure spin-fluctuation models) nor purely phononic (as in BCS), but arises from a **resonant coupling between doped charge carriers and specific soft lattice modes near a Quantum Critical Point (QCP)**.<br>
+<br>
+Specifically, we hypothesize that doping drives the system to a QCP where a structural instability (e.g., $c$-axis breathing mode in cuprates or H-H stretching in hydrides) diverges. This divergence creates a "glue" with an energy scale $\Omega^*$ comparable to the Fermi energy $E_F$. Unlike conventional phonons where retardation suppresses pairing, here the spectral weight of these modes shifts into the low-frequency regime while maintaining strong electron-phonon matrix elements due to the non-adiabatic nature of the QCP. This results in a **non-Fermi liquid normal state** that supports robust $d_{x^2-y^2}$ (cuprates) or $s$-wave (hydrides) pairing via a resonant scattering channel, bypassing the McMillan limit.<br>
+<br>
+#### 2. Mathematical Framework<br>
+<br>
+We propose a generalized Eliashberg theory extended to include non-adiabatic quantum critical fluctuations. The central object is the retarded self-energy $\Sigma(k, i\omega_n)$ and the vertex function $\Gamma$.<br>
+<br>
+**A. The Effective Hamiltonian**<br>
+$$H = H_{el} + H_{ph} + H_{int}$$<br>
+Where $H_{el}$ describes the doped Mott insulator (Hubbard-like) and $H_{ph}$ describes the critical lattice mode. The interaction term $H_{int}$ is modified by a critical exponent $\nu$:<br>
+$$H_{int} = \sum_{k,q,\sigma} g(q, T) c^\dagger_{k+q, \sigma} c_{k, \sigma} (b_q + b^\dagger_{-q})$$<br>
+Here, $g(q, T) \sim |q|^{-\eta} (T/T_Q)^{-\delta}$ reflects the enhancement near the QCP ($T_Q \to 0$).<br>
+<br>
+**B. Modified Eliashberg Equations**<br>
+In the standard Migdal-Eliashberg theory, the mass renormalization $m^*/m \approx 1+\lambda$ assumes adiabaticity ($\omega_D/E_F \ll 1$). In our QCRPM framework, we solve the coupled integral equations for the gap function $\Delta(i\omega_n)$ and the wavefunction renormalization $Z(i\omega_n)$ without the adiabatic approximation:<br>
+<br>
+$$<br>
+Z(i\omega_n) = 1 - \frac{1}{\beta Z_N} \sum_m \int dq \frac{\text{Im}\chi(q, \omega_n - \omega_m)}{(\omega_n - \omega_m)^2 + q^2 v_s^2} \left( \frac{|g(q)|^2}{|\omega_n - \omega_m|^2 + \dots} \right)<br>
+$$<br>
+<br>
+$$<br>
+\Delta(i\omega_n) = \frac{1}{\beta Z_N} \sum_m \int dq \frac{\lambda(q, |\omega_n-\omega_m|)}{|\omega_m|^2 + (\pi T)^2} \frac{\Delta(i\omega_m)}{\sqrt{[\omega_m]^2 + [\Delta(i\omega_m)]^2}}<br>
+$$<br>
+<br>
+*Key Deviation:* The susceptibility $\chi(q, \omega)$ follows a dynamical scaling form characteristic of a QCP:<br>
+$$ \chi(q, \omega) = \frac{C}{q^{z\nu} + (-i\omega/\Gamma_q)^{\alpha}} $$<br>
+where $z=2$ (diffusive) or $z=1$ (Lorentzian) depending on the material class, and $\Gamma_q \propto q^z$.<br>
+<br>
+#### 3. Proof Sketch / Key Steps<br>
+<br>
+To establish this solution rigorously, the following logical progression is required:<br>
+<br>
+1.  **Derivation of Non-Adiabatic Glue:** Demonstrate analytically that as the system approaches the QCP, the phonon frequency $\omega_q$ softens such that $\omega_q \sim k_B T$, invalidating the Born-Oppenheimer approximation used in BCS. Show that the effective coupling constant $\lambda_{eff}$ becomes:<br>
+    $$ \lambda_{eff} \sim \int_0^{\omega^*} \frac{N(E)\alpha^2F(\omega)}{\omega} d\omega $$<br>
+    where $\alpha^2F(\omega)$ exhibits a power-law singularity rather than a Debye cutoff.<br>
+<br>
+2.  **Spectral Weight Transfer:** Prove that the spectral weight of the Hubbard bands transfers to the coherent quasiparticle peak exactly at the doping level where $T_c$ maximizes. This links the "strange metal" linear-$T$ resistivity directly to the pairing glue. The self-consistency condition requires:<br>
+    $$ \text{Re}\Sigma(\omega) \propto
+<hr><p class="hash">SHA3-256: 561828154315d094f89a97422adcbb5aea464c47b65c3a33f7e84b270ec20a9d<br>AIOSS Chain: c63c58829e0ec2c99b65c55a93a56ec9271dcc660b1255132666452597263d3e</p>
+</body></html>
