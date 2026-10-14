@@ -1,0 +1,31 @@
+# Normalise line endings in the repository, check out LF in the working tree.
+* text=auto eol=lf
+
+# Source and docs are text; keep diffs stable across platforms.
+*.py     text diff=python
+*.md     text
+*.toml   text
+*.json   text
+*.yml    text
+*.yaml   text
+*.lock   text
+*.sh     text eol=lf
+
+# The lock file is generated but is a first-class artefact (hash-pinned
+# dependencies); it must be committed and must never be rewritten by a
+# checkout so that its hashes stay verifiable.
+requirements.lock -diff linguist-generated=true
+
+# Binary artefacts are never line-ending translated.
+*.png   binary
+*.jpg   binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+*.whl   binary
+
+# Keep generated and secret material out of the index.
+__pycache__/   binary
+*.key           binary
+*.pem           binary
+vault/          binary

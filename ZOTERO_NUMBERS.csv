@@ -1,0 +1,6 @@
+metric,measured_lab,documented,verdict
+TRL,NOT-MEASURED,present,honest marker kept
+Throughput,NOT-MEASURED (project scope; class ref 4.1-4.2 tok/s Kaggle v52),absent,ok
+NIST_AI_RMF,suite 88% (project lab: see OFFICIAL_BENCHMARKS),present,suite value stands
+MITRE_ATTCK,suite 100/100 (basis varies by project lab),present,suite value stands
+License,Apache-2.0 + Enterprise dual (Anticommons 0.1.0),check,normalized

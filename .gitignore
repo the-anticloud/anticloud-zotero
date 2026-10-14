@@ -1,0 +1,49 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.key
+*.pem
+vault/
+artifacts/
+
+# Generated artefacts.  Both are rewritten in full by `python tools/run_bench.py`
+# on every run, so committing them would leave the working tree permanently
+# dirty and make `git status --porcelain` useless as a health signal.  They stay
+# on disk (the compliance maps reference them as evidence) but are not tracked.
+BENCH.json
+sbom.cdx.json
+
+# Local scratch/progress notes for the build, not part of the distribution.
+_build/
+
+# Anticloud pipeline artefacts (not part of the distribution tree)
+UPSTREAM_CLONE/
+UPSTREAM/
+ISOLATED_LAB_RESULTS/
+OFFICIAL_BENCHMARKS/
+LEDGERS/
+ledger.jsonl
+ledger.aioss
+*.aioss
+README_ANTICLOUD.md
+01_INVESTOR_PACKAGE/
+10_TECHNICAL_HANDOFF/
+25_MILLENNIUM_PROBLEM_PROPOSALS/
+28_TECHNICAL_WHITEPAPER/
+29_INVESTOR_MEMO/
+30_LOI/
+anticloud/
+_PRIOR_DOCS/
+node_modules/
+*.csv
+
