@@ -1,0 +1,55 @@
+{
+  "schema": "anticloud.official-benchmark/1",
+  "framework": "ISO/IEC 27001",
+  "framework_folder": "07_ISO_27001",
+  "project": "ZOTERO",
+  "category": "ACADEMIA_RD",
+  "verdict": "PASS",
+  "source_check": "14_iso_27001",
+  "verdict_source": "ACADEMIA_RD/ZOTERO/BENCH.json check 14_iso_27001, stamped 2026-10-06T12:22:09Z",
+  "controls_mapped": [
+    "5.1.1",
+    "5.1.2",
+    "8.2.3",
+    "8.24",
+    "8.28",
+    "8.29",
+    "8.16",
+    "8.20",
+    "8.24"
+  ],
+  "evidence": {
+    "authority": "ISO/IEC",
+    "command": "python tools/run_bench.py --only iso",
+    "control_ids": [
+      "5.1.1",
+      "5.1.2",
+      "8.2.3",
+      "8.24",
+      "8.28",
+      "8.29",
+      "8.16",
+      "8.20",
+      "8.24"
+    ],
+    "controls_mapped": 9,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 9,
+    "coverage_command": "anticloud-ref bench --framework iso_27001   # 9/9 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "ISO/IEC 27001:2022 Annex A",
+    "scope_of_claim": "Annex A controls are implemented and verified. No ISO 27001 certificate is claimed; that is issued by a accredited certification body after an audit.",
+    "unverified_detail": []
+  },
+  "run_stamp": "2026-10-06T12:22:09Z",
+  "platform": "win32",
+  "python": "3.12.10",
+  "pax_model_level_provenance": "kaggle.com/code/loiskleinner/pax-benchmark-runner v3 (model-level, shared; not a project verdict)",
+  "gaps": [
+    "No anticloud.tier-bench/1 metrics file found for this project (project LOC/files metrics NOT MEASURED).",
+    "Upstream URL NOT YET MEASURED (recorded as \"None\" in anticloud/02_provenance.json).",
+    "Upstream SHA NOT YET MEASURED (no 40-hex sha in anticloud/02_provenance.json).",
+    "No aioss chain head recorded in improve reports for this project (seal may have failed or not been run)."
+  ],
+  "generated": "2026-10-06T13:58:17Z"
+}

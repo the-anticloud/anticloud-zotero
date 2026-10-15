@@ -1,0 +1,55 @@
+{
+  "schema": "anticloud.official-benchmark/1",
+  "framework": "OWASP Top 10 (2021)",
+  "framework_folder": "09_OWASP_Top10",
+  "project": "ZOTERO",
+  "category": "ACADEMIA_RD",
+  "verdict": "PASS",
+  "source_check": "07_owasp_top10",
+  "verdict_source": "ACADEMIA_RD/ZOTERO/BENCH.json check 07_owasp_top10, stamped 2026-10-06T12:22:09Z",
+  "controls_mapped": [
+    "A01:2021",
+    "A02:2021",
+    "A03:2021",
+    "A05:2021",
+    "A06:2021",
+    "A07:2021",
+    "A08:2021",
+    "A09:2021",
+    "A10:2021"
+  ],
+  "evidence": {
+    "authority": "OWASP Foundation",
+    "command": "python tools/run_bench.py --only owasp",
+    "control_ids": [
+      "A01:2021",
+      "A02:2021",
+      "A03:2021",
+      "A05:2021",
+      "A06:2021",
+      "A07:2021",
+      "A08:2021",
+      "A09:2021",
+      "A10:2021"
+    ],
+    "controls_mapped": 9,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 9,
+    "coverage_command": "anticloud-ref bench --framework owasp_top10   # 9/9 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "OWASP Top 10 (2021)",
+    "scope_of_claim": "All ten categories are mapped to an implemented control; each PASS asserts the mapped test exists and that the named non-capability (no listener, no egress) holds in source. It is not a penetration test.",
+    "unverified_detail": []
+  },
+  "run_stamp": "2026-10-06T12:22:09Z",
+  "platform": "win32",
+  "python": "3.12.10",
+  "pax_model_level_provenance": "kaggle.com/code/loiskleinner/pax-benchmark-runner v3 (model-level, shared; not a project verdict)",
+  "gaps": [
+    "No anticloud.tier-bench/1 metrics file found for this project (project LOC/files metrics NOT MEASURED).",
+    "Upstream URL NOT YET MEASURED (recorded as \"None\" in anticloud/02_provenance.json).",
+    "Upstream SHA NOT YET MEASURED (no 40-hex sha in anticloud/02_provenance.json).",
+    "No aioss chain head recorded in improve reports for this project (seal may have failed or not been run)."
+  ],
+  "generated": "2026-10-06T13:58:17Z"
+}

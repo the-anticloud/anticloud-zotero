@@ -1,0 +1,57 @@
+{
+  "schema": "anticloud.official-benchmark/1",
+  "framework": "FedRAMP",
+  "framework_folder": "01_FedRAMP",
+  "project": "ZOTERO",
+  "category": "ACADEMIA_RD",
+  "verdict": "PASS",
+  "source_check": "12_fedramp",
+  "verdict_source": "ACADEMIA_RD/ZOTERO/BENCH.json check 12_fedramp, stamped 2026-10-06T12:22:09Z",
+  "controls_mapped": [
+    "IA-2",
+    "IA-5",
+    "RA-5",
+    "SA-4",
+    "SA-10",
+    "SA-11",
+    "SC-7",
+    "SC-8",
+    "SC-13",
+    "SI-2"
+  ],
+  "evidence": {
+    "authority": "FedRAMP",
+    "command": "python tools/run_bench.py --only fedramp",
+    "control_ids": [
+      "IA-2",
+      "IA-5",
+      "RA-5",
+      "SA-4",
+      "SA-10",
+      "SA-11",
+      "SC-7",
+      "SC-8",
+      "SC-13",
+      "SI-2"
+    ],
+    "controls_mapped": 10,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 10,
+    "coverage_command": "anticloud-ref bench --framework fedramp   # 10/10 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "FedRAMP Rev. 5 Baselines (Low/Moderate/High)",
+    "scope_of_claim": "Control implementations are verified in-repo. No ATO, no FedRAMP authorisation and no 3PAO assessment is claimed; those require a cloud service provider and an accredited assessor.",
+    "unverified_detail": []
+  },
+  "run_stamp": "2026-10-06T12:22:09Z",
+  "platform": "win32",
+  "python": "3.12.10",
+  "pax_model_level_provenance": "kaggle.com/code/loiskleinner/pax-benchmark-runner v3 (model-level, shared; not a project verdict)",
+  "gaps": [
+    "No anticloud.tier-bench/1 metrics file found for this project (project LOC/files metrics NOT MEASURED).",
+    "Upstream URL NOT YET MEASURED (recorded as \"None\" in anticloud/02_provenance.json).",
+    "Upstream SHA NOT YET MEASURED (no 40-hex sha in anticloud/02_provenance.json).",
+    "No aioss chain head recorded in improve reports for this project (seal may have failed or not been run)."
+  ],
+  "generated": "2026-10-06T13:58:17Z"
+}

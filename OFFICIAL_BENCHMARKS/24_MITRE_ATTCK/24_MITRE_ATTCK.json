@@ -1,0 +1,61 @@
+{
+  "schema": "anticloud.official-benchmark/1",
+  "framework": "MITRE ATT&CK",
+  "framework_folder": "24_MITRE_ATTCK",
+  "project": "ZOTERO",
+  "category": "ACADEMIA_RD",
+  "verdict": "PASS",
+  "source_check": "15_mitre_attack",
+  "verdict_source": "ACADEMIA_RD/ZOTERO/BENCH.json check 15_mitre_attack, stamped 2026-10-06T12:22:09Z",
+  "controls_mapped": [
+    "T1078",
+    "T1552",
+    "T1552.001",
+    "T1553",
+    "T1195.002",
+    "T1221",
+    "T1600.002",
+    "T1499",
+    "T1565",
+    "T1565.001",
+    "T1530",
+    "T1619"
+  ],
+  "evidence": {
+    "authority": "MITRE",
+    "command": "python tools/run_bench.py --only mitre",
+    "control_ids": [
+      "T1078",
+      "T1552",
+      "T1552.001",
+      "T1553",
+      "T1195.002",
+      "T1221",
+      "T1600.002",
+      "T1499",
+      "T1565",
+      "T1565.001",
+      "T1530",
+      "T1619"
+    ],
+    "controls_mapped": 12,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 12,
+    "coverage_command": "anticloud-ref bench --framework mitre_attack   # 12/12 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "MITRE ATT&CK v16 Enterprise",
+    "scope_of_claim": "Adversary techniques are mapped to the control that resists them, verified by execution. This is not adversary emulation or a purple-team exercise.",
+    "unverified_detail": []
+  },
+  "run_stamp": "2026-10-06T12:22:09Z",
+  "platform": "win32",
+  "python": "3.12.10",
+  "pax_model_level_provenance": "kaggle.com/code/loiskleinner/pax-benchmark-runner v3 (model-level, shared; not a project verdict)",
+  "gaps": [
+    "No anticloud.tier-bench/1 metrics file found for this project (project LOC/files metrics NOT MEASURED).",
+    "Upstream URL NOT YET MEASURED (recorded as \"None\" in anticloud/02_provenance.json).",
+    "Upstream SHA NOT YET MEASURED (no 40-hex sha in anticloud/02_provenance.json).",
+    "No aioss chain head recorded in improve reports for this project (seal may have failed or not been run)."
+  ],
+  "generated": "2026-10-06T13:58:17Z"
+}

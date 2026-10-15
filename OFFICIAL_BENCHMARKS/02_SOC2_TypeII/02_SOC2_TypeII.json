@@ -1,0 +1,55 @@
+{
+  "schema": "anticloud.official-benchmark/1",
+  "framework": "SOC 2 Type II",
+  "framework_folder": "02_SOC2_TypeII",
+  "project": "ZOTERO",
+  "category": "ACADEMIA_RD",
+  "verdict": "PASS",
+  "source_check": "08_soc2_type2",
+  "verdict_source": "ACADEMIA_RD/ZOTERO/BENCH.json check 08_soc2_type2, stamped 2026-10-06T12:22:09Z",
+  "controls_mapped": [
+    "CC6.1",
+    "CC6.2",
+    "CC6.6",
+    "CC6.7",
+    "CC6.8",
+    "CC7.2",
+    "CC8.1",
+    "CC9.2",
+    "CC6.1"
+  ],
+  "evidence": {
+    "authority": "AICPA",
+    "command": "python tools/run_bench.py --only soc2",
+    "control_ids": [
+      "CC6.1",
+      "CC6.2",
+      "CC6.6",
+      "CC6.7",
+      "CC6.8",
+      "CC7.2",
+      "CC8.1",
+      "CC9.2",
+      "CC6.1"
+    ],
+    "controls_mapped": 9,
+    "controls_unverified": 0,
+    "controls_with_evidence_present": 9,
+    "coverage_command": "anticloud-ref bench --framework soc2   # 9/9 controls have a present evidence file",
+    "coverage_pct": 100.0,
+    "framework": "SOC 2 (TSC 2017 revised 2022)",
+    "scope_of_claim": "Trust Services Criteria are mapped to implemented controls and verified by execution. No SOC 2 Type II report is asserted: a report requires an independent CPA firm and a review period.",
+    "unverified_detail": []
+  },
+  "run_stamp": "2026-10-06T12:22:09Z",
+  "platform": "win32",
+  "python": "3.12.10",
+  "pax_model_level_provenance": "kaggle.com/code/loiskleinner/pax-benchmark-runner v3 (model-level, shared; not a project verdict)",
+  "gaps": [
+    "No anticloud.tier-bench/1 metrics file found for this project (project LOC/files metrics NOT MEASURED).",
+    "Upstream URL NOT YET MEASURED (recorded as \"None\" in anticloud/02_provenance.json).",
+    "Upstream SHA NOT YET MEASURED (no 40-hex sha in anticloud/02_provenance.json).",
+    "No aioss chain head recorded in improve reports for this project (seal may have failed or not been run)."
+  ],
+  "generated": "2026-10-06T13:58:17Z"
+}

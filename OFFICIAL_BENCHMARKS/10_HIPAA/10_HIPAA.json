@@ -1,0 +1,24 @@
+{
+  "schema": "anticloud.official-benchmark/1",
+  "framework": "HIPAA",
+  "framework_folder": "10_HIPAA",
+  "project": "ZOTERO",
+  "category": "ACADEMIA_RD",
+  "verdict": "NOT ASSESSED",
+  "source_check": null,
+  "verdict_source": null,
+  "controls_mapped": [],
+  "evidence": {},
+  "run_stamp": "2026-10-06T12:22:09Z",
+  "platform": "win32",
+  "python": "3.12.10",
+  "pax_model_level_provenance": "kaggle.com/code/loiskleinner/pax-benchmark-runner v3 (model-level, shared; not a project verdict)",
+  "gaps": [
+    "No anticloud.tier-bench/1 metrics file found for this project (project LOC/files metrics NOT MEASURED).",
+    "Upstream URL NOT YET MEASURED (recorded as \"None\" in anticloud/02_provenance.json).",
+    "Upstream SHA NOT YET MEASURED (no 40-hex sha in anticloud/02_provenance.json).",
+    "No aioss chain head recorded in improve reports for this project (seal may have failed or not been run).",
+    "HIPAA: no automated check in the 16-check suite; not assessed"
+  ],
+  "generated": "2026-10-06T13:58:17Z"
+}

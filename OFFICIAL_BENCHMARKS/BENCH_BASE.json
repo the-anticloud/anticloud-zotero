@@ -1,0 +1,1494 @@
+{
+  "schema": "anticloud.tier-bench/1",
+  "project": "ZOTERO",
+  "source": {
+    "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\ACADEMIA_RD\\ZOTERO\\UPSTREAM_CLONE",
+    "git": {
+      "head": "ae50d5258992b49d4eeac274e10996039b0bd909",
+      "url": "https://github.com/zotero/zotero",
+      "branch": "main",
+      "committed_at": "2026-10-01T16:32:36-04:00"
+    }
+  },
+  "metrics": {
+    "files_total": 1919,
+    "source_files_scanned": 599,
+    "lines_of_code": 294901,
+    "languages": {
+      ".svg": 774,
+      ".js": 360,
+      ".scss": 163,
+      ".h": 107,
+      ".cpp": 77,
+      "(none)": 67,
+      ".mjs": 63,
+      ".xhtml": 50,
+      ".png": 40,
+      ".css": 39,
+      ".jsx": 26,
+      ".ts": 14,
+      ".json": 12,
+      ".html": 11,
+      ".sh": 10
+    }
+  },
+  "licence": {
+    "spdx": "AGPL-3.0",
+    "class": "B",
+    "source_file": "COPYING",
+    "redistribution_allowed": false
+  },
+  "dependencies": {
+    "count": 44,
+    "unique": 44,
+    "by_ecosystem": {
+      "npm": 44
+    },
+    "list": [
+      {
+        "ecosystem": "npm",
+        "name": "ace-builds",
+        "version": "^1.4.12",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "classnames",
+        "version": "^2.2.6",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "csl-validator-wasm",
+        "version": "^1.0.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "monaco-editor",
+        "version": "^0.47.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "monacopilot",
+        "version": "^1.1.15",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "prop-types",
+        "version": "^15.8.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react",
+        "version": "^18.3.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-autosuggest",
+        "version": "^10.1.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-dom",
+        "version": "^18.3.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-intl",
+        "version": "^3.4.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-select",
+        "version": "^3.0.8",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "url",
+        "version": "^0.11.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/cli",
+        "version": "^7.26.4",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/core",
+        "version": "^7.26.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/eslint-parser",
+        "version": "^7.25.9",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/eslint-plugin",
+        "version": "^7.25.9",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@babel/preset-react",
+        "version": "^7.26.3",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@eslint/eslintrc",
+        "version": "^3.2.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@eslint/js",
+        "version": "^9.17.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@zotero/eslint-config",
+        "version": "^1.0.8",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "acorn",
+        "version": "^8.8.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "babel-plugin-transform-es2015-modules-commonjs",
+        "version": "^6.26.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "browserify",
+        "version": "^14.5.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "chai",
+        "version": "^4.1.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "chokidar",
+        "version": "^2.1.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "co-mocha",
+        "version": "^1.2.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "colors",
+        "version": "^1.4.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint",
+        "version": "^9.17.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-react",
+        "version": "^7.37.3",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-react-hooks",
+        "version": "^5.1.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "fs-extra",
+        "version": "^3.0.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "ftl-tx",
+        "version": "^0.17.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "globals",
+        "version": "^15.14.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "globby",
+        "version": "^6.1.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "jspath",
+        "version": "^0.4.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "mocha",
+        "version": "^10.4.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "multimatch",
+        "version": "^2.1.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "pako",
+        "version": "^2.1.0",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "react-virtualized",
+        "version": "^9.22.4",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "sass",
+        "version": "^1.69.5",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "sinon",
+        "version": "^7.3.2",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "universalify",
+        "version": "^0.1.1",
+        "source_file": "package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "@types/jscodeshift",
+        "version": "^17.3.0",
+        "source_file": "scripts/migrate-fx140/package.json",
+        "raw": ""
+      },
+      {
+        "ecosystem": "npm",
+        "name": "jscodeshift",
+        "version": "^17.3.0",
+        "source_file": "scripts/migrate-fx140/package.json",
+        "raw": ""
+      }
+    ]
+  },
+  "owasp_top10": {
+    "total_findings": 450,
+    "files_with_findings": 302,
+    "severity": {
+      "high": 50,
+      "medium": 12,
+      "low": 388
+    },
+    "categories": {
+      "A01-BrokenAccessControl": {
+        "count": 0,
+        "findings": []
+      },
+      "A02-CryptographicFailures": {
+        "count": 10,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/attachments.js",
+            "line": 3251,
+            "cwe": "CWE-327",
+            "snippet": "fileBaseName = Zotero.Utilities.Internal.md5(fileBaseName, false);"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/retractions.js",
+            "line": 762,
+            "cwe": "CWE-327",
+            "snippet": "return Zotero.Utilities.Internal.sha1(value);"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/utilities_internal.js",
+            "line": 180,
+            "cwe": "CWE-327",
+            "snippet": "ch.init(ch.MD5);"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/data/item.js",
+            "line": 4123,
+            "cwe": "CWE-327",
+            "snippet": "* MD5 hash of an attachment file"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/pdfWorker/manager.js",
+            "line": 668,
+            "cwe": "CWE-327",
+            "snippet": "throw new Error('Attachment is missing an MD5 hash');"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/server/server_localAPI.js",
+            "line": 1353,
+            "cwe": "CWE-327",
+            "snippet": "`File MD5 does not match expected (got ${actualMD5}, expected ${upload.md5})`);"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/storage/webdav.js",
+            "line": 136,
+            "cwe": "CWE-327",
+            "snippet": "let base = md5(`${p.username}:${p.realm}:${p.password}`);"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/storage/zfs.js",
+            "line": 355,
+            "cwe": "CWE-327",
+            "snippet": "var hash = Zotero.Utilities.Internal.md5(file);"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/translation/translators.js",
+            "line": 350,
+            "cwe": "CWE-327",
+            "snippet": "this[prop] = Zotero.Utilities.Internal.md5(hashString);"
+          },
+          {
+            "severity": "medium",
+            "file": "types/gecko/generated/lib.gecko.xpcom.d.ts",
+            "line": 9089,
+            "cwe": "CWE-327",
+            "snippet": "readonly MD5?: 2;"
+          }
+        ]
+      },
+      "A03-Injection": {
+        "count": 48,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "app/scripts/utils.sh",
+            "line": 81,
+            "cwe": "CWE-78",
+            "snippet": "file_list=$(mktemp)"
+          },
+          {
+            "severity": "high",
+            "file": "app/update-packaging/common.sh",
+            "line": 222,
+            "cwe": "CWE-78",
+            "snippet": "UPDATE_CACHE_TAG=\"$(get_cache_tag)\""
+          },
+          {
+            "severity": "high",
+            "file": "app/win/installer/7zstub/src/Windows/PropVariantConversions.cpp",
+            "line": 68,
+            "cwe": "CWE-120",
+            "snippet": "sprintf(s, \"%04d-%02d-%02d\", st.wYear, st.wMonth, st.wDay);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/collectionViewItemTree.jsx",
+            "line": 1974,
+            "cwe": "CWE-95",
+            "snippet": "let position = COLORED_TAGS_RE.exec(event.code)[1] - 1;"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/runJS.js",
+            "line": 22,
+            "cwe": "CWE-95",
+            "snippet": "result = await win.eval(code);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/elements/itemBox.js",
+            "line": 1718,
+            "cwe": "CWE-95",
+            "snippet": "var parts = lastNameRE.exec(last);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/integration/simpleEditor.js",
+            "line": 91,
+            "cwe": "CWE-95",
+            "snippet": "result: () => exec(formatBlock, '<h1>')"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/update/updates.js",
+            "line": 412,
+            "cwe": "CWE-95",
+            "snippet": "this._pages[page.pageid] = eval(page.getAttribute(\"object\"));"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/attachments.js",
+            "line": 550,
+            "cwe": "CWE-95",
+            "snippet": "var matches = urlRe.exec(url);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/citeproc.js",
+            "line": 909,
+            "cwe": "CWE-95",
+            "snippet": "var m = CSL.TITLE_SPLIT_REGEXP.matchfirst.exec(tail);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/db.js",
+            "line": 206,
+            "cwe": "CWE-95",
+            "snippet": "matches = placeholderRE.exec(sql);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/editorInstance.js",
+            "line": 991,
+            "cwe": "CWE-95",
+            "snippet": "return this._iframeWindow.eval('openImageFilePicker()');"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/file.js",
+            "line": 844,
+            "cwe": "CWE-95",
+            "snippet": "await Zotero.Utilities.Internal.exec(cmd, args);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/fileHandlers.js",
+            "line": 464,
+            "cwe": "CWE-95",
+            "snippet": "Zotero.Utilities.Internal.exec(command, args);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/fulltext.js",
+            "line": 2153,
+            "cwe": "CWE-95",
+            "snippet": "var matches = re.exec(content);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/history.js",
+            "line": 413,
+            "cwe": "CWE-89",
+            "snippet": "var sql = \"SELECT *\" + _contextToSQLFrom(context);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/id.js",
+            "line": 93,
+            "cwe": "CWE-89",
+            "snippet": "var sql = 'SELECT COALESCE(MAX(' + _getTableColumn(table) + ') + 1, 1) FROM ' + table;"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/integration.js",
+            "line": 2806,
+            "cwe": "CWE-95",
+            "snippet": "let m = MENDELEY_URI_RE.exec(uri);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/intl.js",
+            "line": 106,
+            "cwe": "CWE-95",
+            "snippet": "while ((regexpResult = regexp.exec(localeXML))) {"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/proxy.js",
+            "line": 147,
+            "cwe": "CWE-95",
+            "snippet": "var m = proxy.regexp.exec(url);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/recognizeDocument.js",
+            "line": 728,
+            "cwe": "CWE-95",
+            "snippet": "while ((m = DOIre.exec(treeWalker.currentNode.nodeValue))) {"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/schema.js",
+            "line": 2444,
+            "cwe": "CWE-95",
+            "snippet": "while(matches = re.exec(sql)) {"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/searchQuery.js",
+            "line": 139,
+            "cwe": "CWE-95",
+            "snippet": "let match = /^ANNOTATION_TYPE_(.+)$/.exec(prop);"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/style.js",
+            "line": 371,
+            "cwe": "CWE-95",
+            "snippet": "m = /[^\\/]+$/.exec(styleID),"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/zotero.js",
+            "line": 1224,
+            "cwe": "CWE-95",
+            "snippet": "Zotero.Utilities.Internal.exec(applicationPath, args);"
+          }
+        ]
+      },
+      "A04-InsecureDesign": {
+        "count": 114,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "app/build.sh",
+            "line": 850,
+            "cwe": "CWE-",
+            "snippet": "# TODO: Remove this block once the plugin ships a jna.jar without the macOS native"
+          },
+          {
+            "severity": "low",
+            "file": "app/win/installer/7zstub/src/Windows/Time.h",
+            "line": 21,
+            "cwe": "CWE-",
+            "snippet": "inline bool FileTimeToDosTime(const FILETIME &fileTime, UInt32 &dosTime)"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/scaffold.js",
+            "line": 956,
+            "cwe": "CWE-",
+            "snippet": "// so this stupid hack focuses the desired element after skipping a tick"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/templates/newWeb.js",
+            "line": 4,
+            "cwe": "CWE-",
+            "snippet": "Copyright \u00a9 $$YEAR$$ YOUR_NAME <- TODO"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/templates/scrapeBibTeX.js",
+            "line": 2,
+            "cwe": "CWE-",
+            "snippet": "// TODO adjust the url building"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/templates/scrapeEM.js",
+            "line": 8,
+            "cwe": "CWE-",
+            "snippet": "// TODO adjust if needed:"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/templates/scrapeMARC.js",
+            "line": 2,
+            "cwe": "CWE-",
+            "snippet": "// TODO adjust the selector for the lines here"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/templates/scrapeRIS.js",
+            "line": 3,
+            "cwe": "CWE-",
+            "snippet": "// TODO adjust the URL here"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/collectionTree.jsx",
+            "line": 407,
+            "cwe": "CWE-",
+            "snippet": "// Feels like a bit of a hack, but it gets the job done"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/collectionViewItemTree.jsx",
+            "line": 1636,
+            "cwe": "CWE-",
+            "snippet": "// TODO: support items coming from different sources?"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/customElements.js",
+            "line": 44,
+            "cwe": "CWE-",
+            "snippet": "// TODO: rename itemBox.js to infoBox.js later to avoid conflict"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/dictionaryManager.js",
+            "line": 118,
+            "cwe": "CWE-",
+            "snippet": "var toDownload = [];"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/itemTree.jsx",
+            "line": 948,
+            "cwe": "CWE-",
+            "snippet": "// TODO: This is a bad pattern after item tree refactor and needs to be fixed (should not be used as an example)"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/itemTreeRow.js",
+            "line": 213,
+            "cwe": "CWE-",
+            "snippet": "// TODO: This is a bad pattern after item tree refactor and needs to be fixed (should not be used as an example)"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/libraryTree.js",
+            "line": 93,
+            "cwe": "CWE-",
+            "snippet": "// TODO: Return -1 when no rows, and skip selection here"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/locateManager.jsx",
+            "line": 132,
+            "cwe": "CWE-",
+            "snippet": "* TODO: Limit to custom engines?"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/lookup.js",
+            "line": 80,
+            "cwe": "CWE-",
+            "snippet": "/** TODO: handle this **/"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/merge.js",
+            "line": 62,
+            "cwe": "CWE-",
+            "snippet": "// TODO: handle no conflicts"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/readAloudFirstRunDialog.js",
+            "line": 39,
+            "cwe": "CWE-",
+            "snippet": "// TODO"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/readAloudVoicesDialog.js",
+            "line": 33,
+            "cwe": "CWE-",
+            "snippet": "// TODO"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/runJS.js",
+            "line": 113,
+            "cwe": "CWE-",
+            "snippet": "// TODO: Enable if we modify to autocomplete from the Zotero API"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/tabs.js",
+            "line": 34,
+            "cwe": "CWE-",
+            "snippet": "// TODO: Revise this after upgrading to Zotero 7"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/zoteroPane.js",
+            "line": 937,
+            "cwe": "CWE-",
+            "snippet": "// TODO: Select across tabs without selecting with Ctrl-Shift, as in Firefox?"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/actors/translation/http.js",
+            "line": 99,
+            "cwe": "CWE-",
+            "snippet": "// TODO: make sure below does its job in every API call instance"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/components/annotation.jsx",
+            "line": 52,
+            "cwe": "CWE-",
+            "snippet": "// TODO: Localize"
+          }
+        ]
+      },
+      "A05-SecurityMisconfiguration": {
+        "count": 0,
+        "findings": []
+      },
+      "A06-VulnerableComponents": {
+        "count": 0,
+        "findings": []
+      },
+      "A07-AuthFailures": {
+        "count": 2,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/import/mendeley/mendeleyAPIUtils.js",
+            "line": 7,
+            "cwe": "CWE-798",
+            "snippet": "const CLIENT_NOT_VERY_SECRET = 'JtSAMzFdwC6RAED3RMZU';"
+          },
+          {
+            "severity": "high",
+            "file": "chrome/content/zotero/xpcom/http.js",
+            "line": 69,
+            "cwe": "CWE-798",
+            "snippet": "xmlhttp.channel.URI.password = \"********\";"
+          }
+        ]
+      },
+      "A08-SoftwareDataIntegrity": {
+        "count": 273,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "app/build.sh",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "#                     http://zotero.org"
+          },
+          {
+            "severity": "low",
+            "file": "app/scripts/createprecomplete.py",
+            "line": 2,
+            "cwe": "CWE-319",
+            "snippet": "# http://creativecommons.org/publicdomain/zero/1.0/"
+          },
+          {
+            "severity": "low",
+            "file": "app/scripts/optimizejars.py",
+            "line": 7,
+            "cwe": "CWE-319",
+            "snippet": "# http://www.mozilla.org/MPL/"
+          },
+          {
+            "severity": "low",
+            "file": "app/update-packaging/build_autoupdate.sh",
+            "line": 219,
+            "cwe": "CWE-",
+            "snippet": "NEW_ETAG=$(awk 'tolower($1) == \"etag:\" {print $2}' headers.txt | tr -d '\\r' | tail -n 1)"
+          },
+          {
+            "severity": "low",
+            "file": "app/update-packaging/common.sh",
+            "line": 4,
+            "cwe": "CWE-319",
+            "snippet": "# file, You can obtain one at http://mozilla.org/MPL/2.0/."
+          },
+          {
+            "severity": "low",
+            "file": "app/update-packaging/make_full_update.sh",
+            "line": 4,
+            "cwe": "CWE-319",
+            "snippet": "# file, You can obtain one at http://mozilla.org/MPL/2.0/."
+          },
+          {
+            "severity": "low",
+            "file": "app/update-packaging/make_incremental_update.sh",
+            "line": 4,
+            "cwe": "CWE-319",
+            "snippet": "# file, You can obtain one at http://mozilla.org/MPL/2.0/."
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/load.js",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "http://zotero.org"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/scaffold.js",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "http://zotero.org"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/scaffoldItemPreview.js",
+            "line": 21,
+            "cwe": "CWE-319",
+            "snippet": "along with Zotero.  If not, see <http://www.gnu.org/licenses/>."
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/scaffoldItemPreviews.js",
+            "line": 21,
+            "cwe": "CWE-319",
+            "snippet": "along with Zotero.  If not, see <http://www.gnu.org/licenses/>."
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/select.js",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "http://zotero.org"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/templates/newWeb.js",
+            "line": 19,
+            "cwe": "CWE-319",
+            "snippet": "along with Zotero. If not, see <http://www.gnu.org/licenses/>."
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/templates/scrapeBibTeX.js",
+            "line": 5,
+            "cwe": "CWE-319",
+            "snippet": "// e.g. http://www.fachportal-paedagogik.de/fis_bildung/suche/fis_ausg.html?FId=A18196&lart=BibTeX&Speichern=Speichern&senden_an=+E-Mail-Adresse"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/scaffold/templates/scrapeRIS.js",
+            "line": 4,
+            "cwe": "CWE-319",
+            "snippet": "let risURL = `http://citation-needed.services.springer.com/v2/references/${DOI}?format=refman&flavour=citation`;"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/attachLink.js",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "http://zotero.org"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/bibliography.js",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "http://zotero.org"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/captcha.js",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "http://zotero.org"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/charsetMenu.js",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "http://zotero.org"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/collectionTree.jsx",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "http://zotero.org"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/collectionViewItemTree.jsx",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "http://zotero.org"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/contextPane.js",
+            "line": 21,
+            "cwe": "CWE-319",
+            "snippet": "along with Zotero.  If not, see <http://www.gnu.org/licenses/>."
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/createParentDialog.js",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "http://zotero.org"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/customElements.js",
+            "line": 6,
+            "cwe": "CWE-319",
+            "snippet": "http://zotero.org"
+          },
+          {
+            "severity": "low",
+            "file": "chrome/content/zotero/dictionaryManager.js",
+            "line": 21,
+            "cwe": "CWE-319",
+            "snippet": "along with Zotero.  If not, see <http://www.gnu.org/licenses/>."
+          }
+        ]
+      },
+      "A09-LoggingMonitoringFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A10-SSRF": {
+        "count": 3,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/http.js",
+            "line": 723,
+            "cwe": "CWE-918",
+            "snippet": "response = await fetch(url, fetchOptions);"
+          },
+          {
+            "severity": "medium",
+            "file": "scripts/generate-isbn-ranges.py",
+            "line": 15,
+            "cwe": "CWE-918",
+            "snippet": "rangesRoot = ET.parse(urllib.request.urlopen(url))"
+          },
+          {
+            "severity": "low",
+            "file": "types/gecko/generated/lib.gecko.dom.d.ts",
+            "line": 16699,
+            "cwe": "CWE-601",
+            "snippet": "redirect(url: string, status?: number): Response;"
+          }
+        ]
+      }
+    }
+  },
+  "owasp_llm_top10": {
+    "total_findings": 7,
+    "files_with_findings": 7,
+    "severity": {
+      "high": 0,
+      "medium": 7,
+      "low": 0
+    },
+    "categories": {
+      "LLM01-PromptInjection": {
+        "count": 7,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "chrome/content/scaffold/scaffold.js",
+            "line": 143,
+            "cwe": "CWE-1336",
+            "snippet": "Scaffold.addTemplate('templateNewItem', type);"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/fileRenamingDialog.js",
+            "line": 106,
+            "cwe": "CWE-1336",
+            "snippet": "if (this._shouldPromptInvalidTemplate()) {"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/elements/fileRenamingSettings.js",
+            "line": 179,
+            "cwe": "CWE-1336",
+            "snippet": "get formatTemplate() {"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/attachments.js",
+            "line": 2312,
+            "cwe": "CWE-1336",
+            "snippet": "let normalized = typeof formatString === 'string' ? this.normalizeRenameTemplate(formatString) : '';"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/editorInstance.js",
+            "line": 1597,
+            "cwe": "CWE-1336",
+            "snippet": "html = lazy.generateHTMLFromTemplate(Zotero.Prefs.get('annotations.noteTemplates.title'), vars);"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/integration.js",
+            "line": 250,
+            "cwe": "CWE-1336",
+            "snippet": "if (Zotero.Integration.warnOutdatedTemplate(agent, templateVersion)) return;"
+          },
+          {
+            "severity": "medium",
+            "file": "chrome/content/zotero/xpcom/utilities_internal.js",
+            "line": 2395,
+            "cwe": "CWE-1336",
+            "snippet": "* @deprecated Use generateHTMLFromTemplate() from modules/templates.mjs"
+          }
+        ]
+      },
+      "LLM02-SensitiveInfoDisclosure": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM03-SupplyChain": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM04-DataPoisoning": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM05-ImproperOutputHandling": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM06-ExcessiveAgency": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM07-SystemPromptLeak": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM08-VectorEmbeddingWeaknesses": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM09-Misinformation": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM10-UnboundedConsumption": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "sbom": {
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:2e29693e-e28a-5908-98d6-3c554f457516",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-05T14:38:39Z",
+      "component": {
+        "type": "application",
+        "name": "ZOTERO",
+        "version": "ae50d5258992",
+        "bom-ref": "pkg:generic/anticloud/ZOTERO@ae50d5258992",
+        "purl": "pkg:generic/anticloud/ZOTERO@ae50d5258992",
+        "licenses": [
+          {
+            "license": {
+              "id": "AGPL-3.0"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "name": "anticloud:source-commit",
+          "value": "ae50d5258992b49d4eeac274e10996039b0bd909"
+        },
+        {
+          "name": "anticloud:source-url",
+          "value": "https://github.com/zotero/zotero"
+        },
+        {
+          "name": "anticloud:tier",
+          "value": "tier-agent"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "ace-builds",
+        "version": "^1.4.12",
+        "purl": "pkg:npm/ace-builds@^1.4.12",
+        "bom-ref": "npm/ace-builds@^1.4.12"
+      },
+      {
+        "type": "library",
+        "name": "classnames",
+        "version": "^2.2.6",
+        "purl": "pkg:npm/classnames@^2.2.6",
+        "bom-ref": "npm/classnames@^2.2.6"
+      },
+      {
+        "type": "library",
+        "name": "csl-validator-wasm",
+        "version": "^1.0.0",
+        "purl": "pkg:npm/csl-validator-wasm@^1.0.0",
+        "bom-ref": "npm/csl-validator-wasm@^1.0.0"
+      },
+      {
+        "type": "library",
+        "name": "monaco-editor",
+        "version": "^0.47.0",
+        "purl": "pkg:npm/monaco-editor@^0.47.0",
+        "bom-ref": "npm/monaco-editor@^0.47.0"
+      },
+      {
+        "type": "library",
+        "name": "monacopilot",
+        "version": "^1.1.15",
+        "purl": "pkg:npm/monacopilot@^1.1.15",
+        "bom-ref": "npm/monacopilot@^1.1.15"
+      },
+      {
+        "type": "library",
+        "name": "prop-types",
+        "version": "^15.8.0",
+        "purl": "pkg:npm/prop-types@^15.8.0",
+        "bom-ref": "npm/prop-types@^15.8.0"
+      },
+      {
+        "type": "library",
+        "name": "react",
+        "version": "^18.3.1",
+        "purl": "pkg:npm/react@^18.3.1",
+        "bom-ref": "npm/react@^18.3.1"
+      },
+      {
+        "type": "library",
+        "name": "react-autosuggest",
+        "version": "^10.1.0",
+        "purl": "pkg:npm/react-autosuggest@^10.1.0",
+        "bom-ref": "npm/react-autosuggest@^10.1.0"
+      },
+      {
+        "type": "library",
+        "name": "react-dom",
+        "version": "^18.3.1",
+        "purl": "pkg:npm/react-dom@^18.3.1",
+        "bom-ref": "npm/react-dom@^18.3.1"
+      },
+      {
+        "type": "library",
+        "name": "react-intl",
+        "version": "^3.4.0",
+        "purl": "pkg:npm/react-intl@^3.4.0",
+        "bom-ref": "npm/react-intl@^3.4.0"
+      },
+      {
+        "type": "library",
+        "name": "react-select",
+        "version": "^3.0.8",
+        "purl": "pkg:npm/react-select@^3.0.8",
+        "bom-ref": "npm/react-select@^3.0.8"
+      },
+      {
+        "type": "library",
+        "name": "url",
+        "version": "^0.11.0",
+        "purl": "pkg:npm/url@^0.11.0",
+        "bom-ref": "npm/url@^0.11.0"
+      },
+      {
+        "type": "library",
+        "name": "@babel/cli",
+        "version": "^7.26.4",
+        "purl": "pkg:npm/@babel/cli@^7.26.4",
+        "bom-ref": "npm/@babel/cli@^7.26.4"
+      },
+      {
+        "type": "library",
+        "name": "@babel/core",
+        "version": "^7.26.0",
+        "purl": "pkg:npm/@babel/core@^7.26.0",
+        "bom-ref": "npm/@babel/core@^7.26.0"
+      },
+      {
+        "type": "library",
+        "name": "@babel/eslint-parser",
+        "version": "^7.25.9",
+        "purl": "pkg:npm/@babel/eslint-parser@^7.25.9",
+        "bom-ref": "npm/@babel/eslint-parser@^7.25.9"
+      },
+      {
+        "type": "library",
+        "name": "@babel/eslint-plugin",
+        "version": "^7.25.9",
+        "purl": "pkg:npm/@babel/eslint-plugin@^7.25.9",
+        "bom-ref": "npm/@babel/eslint-plugin@^7.25.9"
+      },
+      {
+        "type": "library",
+        "name": "@babel/preset-react",
+        "version": "^7.26.3",
+        "purl": "pkg:npm/@babel/preset-react@^7.26.3",
+        "bom-ref": "npm/@babel/preset-react@^7.26.3"
+      },
+      {
+        "type": "library",
+        "name": "@eslint/eslintrc",
+        "version": "^3.2.0",
+        "purl": "pkg:npm/@eslint/eslintrc@^3.2.0",
+        "bom-ref": "npm/@eslint/eslintrc@^3.2.0"
+      },
+      {
+        "type": "library",
+        "name": "@eslint/js",
+        "version": "^9.17.0",
+        "purl": "pkg:npm/@eslint/js@^9.17.0",
+        "bom-ref": "npm/@eslint/js@^9.17.0"
+      },
+      {
+        "type": "library",
+        "name": "@zotero/eslint-config",
+        "version": "^1.0.8",
+        "purl": "pkg:npm/@zotero/eslint-config@^1.0.8",
+        "bom-ref": "npm/@zotero/eslint-config@^1.0.8"
+      },
+      {
+        "type": "library",
+        "name": "acorn",
+        "version": "^8.8.2",
+        "purl": "pkg:npm/acorn@^8.8.2",
+        "bom-ref": "npm/acorn@^8.8.2"
+      },
+      {
+        "type": "library",
+        "name": "babel-plugin-transform-es2015-modules-commonjs",
+        "version": "^6.26.2",
+        "purl": "pkg:npm/babel-plugin-transform-es2015-modules-commonjs@^6.26.2",
+        "bom-ref": "npm/babel-plugin-transform-es2015-modules-commonjs@^6.26.2"
+      },
+      {
+        "type": "library",
+        "name": "browserify",
+        "version": "^14.5.0",
+        "purl": "pkg:npm/browserify@^14.5.0",
+        "bom-ref": "npm/browserify@^14.5.0"
+      },
+      {
+        "type": "library",
+        "name": "chai",
+        "version": "^4.1.2",
+        "purl": "pkg:npm/chai@^4.1.2",
+        "bom-ref": "npm/chai@^4.1.2"
+      },
+      {
+        "type": "library",
+        "name": "chokidar",
+        "version": "^2.1.2",
+        "purl": "pkg:npm/chokidar@^2.1.2",
+        "bom-ref": "npm/chokidar@^2.1.2"
+      },
+      {
+        "type": "library",
+        "name": "co-mocha",
+        "version": "^1.2.1",
+        "purl": "pkg:npm/co-mocha@^1.2.1",
+        "bom-ref": "npm/co-mocha@^1.2.1"
+      },
+      {
+        "type": "library",
+        "name": "colors",
+        "version": "^1.4.0",
+        "purl": "pkg:npm/colors@^1.4.0",
+        "bom-ref": "npm/colors@^1.4.0"
+      },
+      {
+        "type": "library",
+        "name": "eslint",
+        "version": "^9.17.0",
+        "purl": "pkg:npm/eslint@^9.17.0",
+        "bom-ref": "npm/eslint@^9.17.0"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-react",
+        "version": "^7.37.3",
+        "purl": "pkg:npm/eslint-plugin-react@^7.37.3",
+        "bom-ref": "npm/eslint-plugin-react@^7.37.3"
+      },
+      {
+        "type": "library",
+        "name": "eslint-plugin-react-hooks",
+        "version": "^5.1.0",
+        "purl": "pkg:npm/eslint-plugin-react-hooks@^5.1.0",
+        "bom-ref": "npm/eslint-plugin-react-hooks@^5.1.0"
+      },
+      {
+        "type": "library",
+        "name": "fs-extra",
+        "version": "^3.0.1",
+        "purl": "pkg:npm/fs-extra@^3.0.1",
+        "bom-ref": "npm/fs-extra@^3.0.1"
+      },
+      {
+        "type": "library",
+        "name": "ftl-tx",
+        "version": "^0.17.0",
+        "purl": "pkg:npm/ftl-tx@^0.17.0",
+        "bom-ref": "npm/ftl-tx@^0.17.0"
+      },
+      {
+        "type": "library",
+        "name": "globals",
+        "version": "^15.14.0",
+        "purl": "pkg:npm/globals@^15.14.0",
+        "bom-ref": "npm/globals@^15.14.0"
+      },
+      {
+        "type": "library",
+        "name": "globby",
+        "version": "^6.1.0",
+        "purl": "pkg:npm/globby@^6.1.0",
+        "bom-ref": "npm/globby@^6.1.0"
+      },
+      {
+        "type": "library",
+        "name": "jspath",
+        "version": "^0.4.0",
+        "purl": "pkg:npm/jspath@^0.4.0",
+        "bom-ref": "npm/jspath@^0.4.0"
+      },
+      {
+        "type": "library",
+        "name": "mocha",
+        "version": "^10.4.0",
+        "purl": "pkg:npm/mocha@^10.4.0",
+        "bom-ref": "npm/mocha@^10.4.0"
+      },
+      {
+        "type": "library",
+        "name": "multimatch",
+        "version": "^2.1.0",
+        "purl": "pkg:npm/multimatch@^2.1.0",
+        "bom-ref": "npm/multimatch@^2.1.0"
+      },
+      {
+        "type": "library",
+        "name": "pako",
+        "version": "^2.1.0",
+        "purl": "pkg:npm/pako@^2.1.0",
+        "bom-ref": "npm/pako@^2.1.0"
+      },
+      {
+        "type": "library",
+        "name": "react-virtualized",
+        "version": "^9.22.4",
+        "purl": "pkg:npm/react-virtualized@^9.22.4",
+        "bom-ref": "npm/react-virtualized@^9.22.4"
+      },
+      {
+        "type": "library",
+        "name": "sass",
+        "version": "^1.69.5",
+        "purl": "pkg:npm/sass@^1.69.5",
+        "bom-ref": "npm/sass@^1.69.5"
+      },
+      {
+        "type": "library",
+        "name": "sinon",
+        "version": "^7.3.2",
+        "purl": "pkg:npm/sinon@^7.3.2",
+        "bom-ref": "npm/sinon@^7.3.2"
+      },
+      {
+        "type": "library",
+        "name": "universalify",
+        "version": "^0.1.1",
+        "purl": "pkg:npm/universalify@^0.1.1",
+        "bom-ref": "npm/universalify@^0.1.1"
+      },
+      {
+        "type": "library",
+        "name": "@types/jscodeshift",
+        "version": "^17.3.0",
+        "purl": "pkg:npm/@types/jscodeshift@^17.3.0",
+        "bom-ref": "npm/@types/jscodeshift@^17.3.0"
+      },
+      {
+        "type": "library",
+        "name": "jscodeshift",
+        "version": "^17.3.0",
+        "purl": "pkg:npm/jscodeshift@^17.3.0",
+        "bom-ref": "npm/jscodeshift@^17.3.0"
+      }
+    ]
+  },
+  "elapsed_seconds": 291.13
+}
