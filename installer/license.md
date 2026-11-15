@@ -109,4 +109,4 @@ Full LOI terms: `LOI/GENERAL_LOI.md` and `LOI/ENTERPRISE_LOI.md`
 *Anticloud FZ LLE · 0-1.gg · lois@0-1.gg*
 *PAX L5 Narrow L2 General 27B · Apache 2.0 / Anticommons Enterprise License 1.0*
 *Company: Anticloud FZ LLE (UAE Free Zone Limited Liability Establishment)*
-*Patent Status: Patent Pending (USPTO) · IP Owner: Anticloud FZ LLE*
+*Patent Status: Prior art documented (USPTO provisional drafting in progress) · IP Owner: Anticloud FZ LLE*
